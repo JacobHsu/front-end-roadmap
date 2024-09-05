@@ -412,16 +412,9 @@ export const all = [
   {
     text: "学习永无止境",
     x: 300,
-    y: 4500,
+    y: 4200,
     process: 1,
     link:"/learn-from-github"
-  },
-  {
-    text: "翻滚吧！后浪！",
-    x: 400,
-    y: 4900,
-    process: 1,
-    link:"/afterwave"
   },
 ];
 function getRoadmapByProcess(process) {
