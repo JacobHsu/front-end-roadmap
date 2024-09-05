@@ -5,12 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #155263; */
 }
 
 .header {
   background-color: #fff;
-  height: 220px;
+  height: 40px;
   padding: 0 10%;
 }
 .top img {
@@ -28,21 +27,8 @@ body {
 .header .title .text {
   position: relative;
 }
-.header .title .emoji {
-  position: absolute;
-  right: -100px;
-  bottom: 0;
-  font-size: 30px;
-}
-.header .sub-title {
-  text-align: center;
-  font-size: 18px;
-  color: #555;
-  padding-top: 6px;
-}
-
 .github-button {
   position: absolute;
   right: 10%;
-  top: 30px;
+  top: 4px;
 }
