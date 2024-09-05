@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/front-end-roadmap/static/css/main.fd651e80.css",
-    "main.js": "/front-end-roadmap/static/js/main.364bbb8c.js",
+    "main.js": "/front-end-roadmap/static/js/main.82abfa0f.js",
     "index.html": "/front-end-roadmap/index.html",
     "main.fd651e80.css.map": "/front-end-roadmap/static/css/main.fd651e80.css.map",
-    "main.364bbb8c.js.map": "/front-end-roadmap/static/js/main.364bbb8c.js.map"
+    "main.82abfa0f.js.map": "/front-end-roadmap/static/js/main.82abfa0f.js.map"
   },
   "entrypoints": [
     "static/css/main.fd651e80.css",
-    "static/js/main.364bbb8c.js"
+    "static/js/main.82abfa0f.js"
   ]
 }
