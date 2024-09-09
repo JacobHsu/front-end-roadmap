@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import Axios from "axios";
 
 import "./style.css";
-
-const distinct = (arr) => {
-  let map = new Map();
-  for (let item of arr) {
-    if (!map.has(item.author.id)) {
-      map.set(item.author.id, item);
-    }
-  }
-  return [...map.values()];
-};
 
 export default function Guide() {
   const history = useHistory();
   
-  // 简单处理: router => detail page set scrollTop
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
