@@ -48,30 +48,7 @@ export default function Guide() {
       <div className="go-home" onClick={history.goBack}>
         <span>{"<- 返回"}</span>
       </div>
-      <>
-        <Markdown />
-        <div className="go-github-edit">
-          <a
-            href={`https://github.com/ObjTube/front-end-roadmap/edit/master/src/page/guide/md/${query}.md`}
-          >
-            想要补充，点击这里
-            <span role="img" aria-label="cool">
-              📝
-            </span>
-          </a>
-        </div>
-        <div className="github-contributors">
-          <div className="github-contributors-title">贡献人员</div>
-          <div className="github-contributors-info">
-            {contributors.map((ct, idx) => (
-              <a href={ct.github} key={"contributors-"+idx} target="_blank" rel="noopener noreferrer">
-                <img src={ct.avatar_url} alt={ct.name} />
-                <span>{ct.name}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </>
+      <Markdown />
     </div>
   );
 }

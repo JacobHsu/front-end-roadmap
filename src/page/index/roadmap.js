@@ -5,13 +5,13 @@ import { c, TAG } from "./drawRoadmap.js";
  */
 export const all = [
   {
-    text: "准备开始",
+    text: "準備開始",
     x: 400,
     y: 0,
     process: 1,
   },
   {
-    text: "互联网",
+    text: "Internet",
     x: 400,
     y: 100,
     tag: TAG.recommand,
