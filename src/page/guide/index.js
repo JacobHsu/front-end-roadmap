@@ -15,33 +15,12 @@ const distinct = (arr) => {
 };
 
 export default function Guide() {
-  let { query } = useParams();
   const history = useHistory();
-  const [contributors, setContributors] = useState([]);
   
   // 简单处理: router => detail page set scrollTop
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    Array.from(document.getElementsByTagName("a")).forEach((el) => {
-      el.setAttribute("target", "_blank");
-    });
-    const commitLogApi = `https://api.github.com/repos/ObjTube/front-end-roadmap/commits?path=src/page/guide/md/${query}.md`;
-    Axios.get(commitLogApi).then((res) => {
-      if (res.status && res.data) {
-        const contributors = distinct(res.data)
-          .map((item) => ({
-            name: item.author.login,
-            avatar_url: item.author.avatar_url,
-            github: item.author.html_url,
-          }))
-          .reverse();
-        setContributors(contributors);
-      }
-    });
-  }, [query]);
 
   return (
     <div className="guide-container">
